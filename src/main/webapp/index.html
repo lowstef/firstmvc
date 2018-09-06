@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>标题</title>
+
+    <style>
+        #div{
+            background-color: chartreuse;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+<span id="txt"></span>
+<div id="div"></div>
+
+<a href="javascript:void(0)">点我</a>
+
+</body>
+<script type="text/javascript">
+    onload = function () {
+        document.getElementById("txt").innerHTML = "onload加载完毕"
+    }
+
+    var d1 = document.getElementById("div");
+
+    d1.onmousemove = function () {
+        this.style.backgroundColor = "pink"
+    }
+    d1.onmouseout = function () {
+        this.style.backgroundColor = "green"
+    }
+
+</script>
+</html>
